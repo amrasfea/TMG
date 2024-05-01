@@ -11,9 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('platinum', function (Blueprint $table) {
-            $table->id('platId');
-            $table->string('name');
+        Schema::create('m_mentor', function (Blueprint $table) {
+            $table->id();
             $table->timestamps();
         });
     }
@@ -23,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('platinum');
+        Schema::dropIfExists('m_mentor');
     }
 };
