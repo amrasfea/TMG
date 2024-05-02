@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('c_r_m_p_s', function (Blueprint $table) {
             $table->string('C_ID')->primary();
             $table->string('S_staffID');
-            $table->foreign('S_staffID')->references('S_staffID')->on('S_staff');
+            $table->foreign('S_staffID')->references('S_staffID')->on('s_staffs');
             $table->string('P_platinumID');
-            $table->foreign('P_platinumID')->references('P_platinumID')->on('P_Platinum');
+            $table->foreign('P_platinumID')->references('P_platinumID')->on('p__platinums');
             $table->string('FB_WeeklyFocusBlockID');
             $table->foreign('FB_WeeklyFocusBlockID')->references('FB_WeeklyFocusBlockID')->on('FB_WeeklyFocusBlock');
 
