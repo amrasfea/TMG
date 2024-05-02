@@ -12,8 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('s_b__social_blocks', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->string('FB_SBlockID')->primary();
+            $table->string('FB_WeeklyFocusID');
+            $table->foreign('FB_WeeklyFocusID')->references('FB_WeeklyFocusID')->on('FB_WeeklyFocusBlock');
+            $table->date('FB_StartDate');
+            $table->date('FB_EndDate');
+            $table->string('FB_BlockItem');
+            $table->string('FB_BlockDetail');
         });
     }
 

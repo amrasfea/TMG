@@ -12,8 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('p_r__publication_reports', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->string('PR_PublicationReportID')->primary();
+            $table->date('PR_Date');
+            $table->string('PR_Description');
+            $table->string('M_mentorID');
+            $table->foreign('M_mentorID')->references('M_mentorID')->on('M_mentor');
+            $table->string('PB_ID');
+            $table->foreign('PB_ID')->references('PB_ID')->on('PB_Publication');
         });
     }
 

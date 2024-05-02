@@ -12,8 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('r_p__reports', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->string('RP_ID')->primary();
+            $table->string('RP_Name');
+            $table->string('RP_Uni');
+            $table->string('RP_Email');
+            $table->string('RP_PhoneNum');
+            $table->string('RP_Research');
+            $table->string('RP_Paper');
+            $table->string('P_platinumID');
+            $table->foreign('P_platinumID')->references('P_platinumID')->on('P_Platinum');
+            
         });
     }
 

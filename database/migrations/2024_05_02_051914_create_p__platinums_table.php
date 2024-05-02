@@ -12,8 +12,31 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('p__platinums', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->string('P_platinumID')->primary();
+            $table->string('S_staffID');
+            $table->foreign('S_staffID')->references('S_staffID')->on('S_staff');
+            $table->string('A_accountID');
+            $table->foreign('A_accountID')->references('A_accountID')->on('A_account');
+            $table->string('P_title');
+            $table->string('P_fullName');
+            $table->string('P_icNum');
+            $table->string('P_gender');
+            $table->string('P_race');
+            $table->string('P_citizenship');
+            $table->string('P_address');
+            $table->string('P_phoneNum');
+            $table->string('P_email');
+            $table->string('P_fbName');
+            $table->string('P_edulevel');
+            $table->string('P_sponsorship');
+            $table->string('P_occupation');
+            $table->string('P_eduInstitute');
+            $table->string('P_programType');
+            $table->string('P_batch');
+            $table->string('P_referral');
+            $table->string('P_refName');
+            $table->string('P_refBatch');
+            $table->string('P_tshirtSize');
         });
     }
 

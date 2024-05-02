@@ -12,8 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('f_b__weekly_focus_blocks', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->string('FB_WeeklyFocusID')->primary();
+            $table->string('P_platinumID');
+            $table->foreign('P_platinumID')->references('P_platinumID')->on('P_Platinum');
+            $table->string('M_mentorID');
+            $table->foreign('M_mentorID')->references('M_mentorID')->on('M_mentor');
+            $table->string('FB_BlockType');
+            $table->string('FB_BlockDesc');
+            $table->date('FB_StartDate');
+            $table->date('FB_EndDate');
         });
     }
 
