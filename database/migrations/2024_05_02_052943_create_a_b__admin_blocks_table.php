@@ -11,8 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('a_accounts', function (Blueprint $table) {
-            //
+        Schema::create('a_b__admin_blocks', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
         });
     }
 
@@ -21,8 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('a_accounts', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('a_b__admin_blocks');
     }
 };
