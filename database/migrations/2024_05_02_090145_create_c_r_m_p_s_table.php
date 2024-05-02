@@ -17,8 +17,8 @@ return new class extends Migration
             $table->foreign('S_staffID')->references('S_staffID')->on('s_staffs');
             $table->string('P_platinumID');
             $table->foreign('P_platinumID')->references('P_platinumID')->on('p__platinums');
-            $table->string('FB_WeeklyFocusBlockID');
-            $table->foreign('FB_WeeklyFocusBlockID')->references('FB_WeeklyFocusBlockID')->on('f_b__weekly_focus_blocks');
+            $table->string('FB_WeeklyFocusID');
+            $table->foreign('FB_WeeklyFocusID')->references('FB_WeeklyFocusID')->on('f_b__weekly_focus_blocks');
 
         });
     }
