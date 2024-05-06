@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('p_b__publications', function (Blueprint $table) {
+        Schema::create('publications', function (Blueprint $table) {
             $table->string('PB_ID')->primary();
             $table->string('ED_ID');
             $table->foreign('ED_ID')->references('ED_ID')->on('e_d__expert_domains');
@@ -33,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('p_b__publications');
+        Schema::dropIfExists('publications');
     }
 };

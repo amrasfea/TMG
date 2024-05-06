@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('m_mentors', function (Blueprint $table) {
+        Schema::create('mentors', function (Blueprint $table) {
             $table->string('M_mentorID')->primary();
             $table->string('A_accountID');
             $table->foreign('A_accountID')->references('A_accountID')->on('a_accounts');
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('m_mentors');
+        Schema::dropIfExists('mentors');
     }
 };

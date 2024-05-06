@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('f_b__focus_blocks', function (Blueprint $table) {
+        Schema::create('focusBlocks', function (Blueprint $table) {
             $table->string('FB_FBlockID')->primary();
             $table->string('FB_WeeklyFocusID');
             $table->foreign('FB_WeeklyFocusID')->references('FB_WeeklyFocusID')->on('f_b__weekly_focus_blocks');
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('f_b__focus_blocks');
+        Schema::dropIfExists('focusBlocks');
     }
 };

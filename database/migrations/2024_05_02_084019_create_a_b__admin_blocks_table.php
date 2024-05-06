@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('a_b__admin_blocks', function (Blueprint $table) {
+        Schema::create('adminBlocks', function (Blueprint $table) {
             $table->string('FB_ABlockID')->primary();
             $table->string('FB_WeeklyFocusID');
             $table->foreign('FB_WeeklyFocusID')->references('FB_WeeklyFocusID')->on('f_b__weekly_focus_blocks');
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('a_b__admin_blocks');
+        Schema::dropIfExists('adminBlocks');
     }
 };

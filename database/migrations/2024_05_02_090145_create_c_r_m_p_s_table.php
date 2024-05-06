@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('c_r_m_p_s', function (Blueprint $table) {
+        Schema::create('crmps', function (Blueprint $table) {
             $table->string('C_ID')->primary();
             $table->string('S_staffID');
             $table->foreign('S_staffID')->references('S_staffID')->on('s_staffs');
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('c_r_m_p_s');
+        Schema::dropIfExists('crmps');
     }
 };

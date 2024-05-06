@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('d_t_p__draft_thesis_performances', function (Blueprint $table) {
+        Schema::create('DraftThesisPerformances', function (Blueprint $table) {
             $table->string('DTP_DraftNum')->primary();
             $table->string('DTP_Title');
             $table->string('C_ID');
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('d_t_p__draft_thesis_performances');
+        Schema::dropIfExists('DraftThesisPerformances');
     }
 };

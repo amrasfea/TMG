@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('e_d__expert_domains', function (Blueprint $table) {
+        Schema::create('expertDomains', function (Blueprint $table) {
             $table->string('ED_ID')->primary();
             $table->string('P_platinumID');
             $table->foreign('P_platinumID')->references('P_platinumID')->on('p__platinums');
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('e_d__expert_domains');
+        Schema::dropIfExists('expertDomains');
     }
 };
