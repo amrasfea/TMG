@@ -15,14 +15,14 @@ return new class extends Migration
             $table->string('DTP_DraftNum')->primary();
             $table->string('DTP_Title');
             $table->string('C_ID');
-            $table->foreign('C_ID')->references('C_ID')->on('c_r_m_p_s');
+            $table->foreign('C_ID')->references('C_ID')->on('crmps');
             $table->string('P_platinumID');
-            $table->foreign('P_platinumID')->references('P_platinumID')->on('p__platinums');
+            $table->foreign('P_platinumID')->references('P_platinumID')->on('platinums');
             $table->date('DTP_StartDate');
             $table->date('DTP_CompletionDate');
             $table->integer('DTP_PagesNum');
             $table->string('M_mentorID');
-            $table->foreign('M_mentorID')->references('M_mentorID')->on('m_mentors');
+            $table->foreign('M_mentorID')->references('M_mentorID')->on('mentors');
             $table->string('DTP_DDCgroup');
             $table->integer('DTP_PrepareDays');
             $table->integer('DTP_TotalPages');

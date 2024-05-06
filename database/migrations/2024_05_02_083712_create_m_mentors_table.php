@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('mentors', function (Blueprint $table) {
             $table->string('M_mentorID')->primary();
             $table->string('A_accountID');
-            $table->foreign('A_accountID')->references('A_accountID')->on('a_accounts');
+            $table->foreign('A_accountID')->references('A_accountID')->on('accounts');
             $table->string('M_phoneNum');
             $table->string('M_position');
             $table->string('M_name');

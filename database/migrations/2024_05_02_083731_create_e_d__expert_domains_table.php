@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('expertDomains', function (Blueprint $table) {
             $table->string('ED_ID')->primary();
             $table->string('P_platinumID');
-            $table->foreign('P_platinumID')->references('P_platinumID')->on('p__platinums');
+            $table->foreign('P_platinumID')->references('P_platinumID')->on('platinums');
             $table->string('M_mentorID');
-            $table->foreign('M_mentorID')->references('M_mentorID')->on('m_mentors');
+            $table->foreign('M_mentorID')->references('M_mentorID')->on('mentors');
             $table->string('ED_Name');
             $table->string('ED_Uni');
             $table->string('ED_Email');

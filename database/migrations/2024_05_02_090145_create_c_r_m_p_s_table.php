@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('crmps', function (Blueprint $table) {
             $table->string('C_ID')->primary();
             $table->string('S_staffID');
-            $table->foreign('S_staffID')->references('S_staffID')->on('s_staffs');
+            $table->foreign('S_staffID')->references('S_staffID')->on('staffs');
             $table->string('P_platinumID');
-            $table->foreign('P_platinumID')->references('P_platinumID')->on('p__platinums');
+            $table->foreign('P_platinumID')->references('P_platinumID')->on('platinums');
             $table->string('FB_WeeklyFocusID');
-            $table->foreign('FB_WeeklyFocusID')->references('FB_WeeklyFocusID')->on('f_b__weekly_focus_blocks');
+            $table->foreign('FB_WeeklyFocusID')->references('FB_WeeklyFocusID')->on('WeeklyFocusBlocks');
 
         });
     }

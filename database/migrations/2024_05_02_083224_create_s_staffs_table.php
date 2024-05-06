@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('staffs', function (Blueprint $table) {
             $table->string('S_staffID')->primary();
             $table->string('A_accountID');
-            $table->foreign('A_accountID')->references('A_accountID')->on('a_accounts');
+            $table->foreign('A_accountID')->references('A_accountID')->on('accounts');
             $table->string('S_position');
             $table->string('S_department');
 

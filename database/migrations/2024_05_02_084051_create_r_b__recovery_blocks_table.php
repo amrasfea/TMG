@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('recoveryBlocks', function (Blueprint $table) {
             $table->string('FB_RBlockID')->primary();
             $table->string('FB_WeeklyFocusID');
-            $table->foreign('FB_WeeklyFocusID')->references('FB_WeeklyFocusID')->on('f_b__weekly_focus_blocks');
+            $table->foreign('FB_WeeklyFocusID')->references('FB_WeeklyFocusID')->on('WeeklyFocusBlocks');
             $table->date('FB_StartDate');
             $table->date('FB_EndDate');
             $table->string('FB_BlockItem');

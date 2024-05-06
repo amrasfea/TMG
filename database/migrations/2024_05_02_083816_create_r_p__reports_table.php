@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('RP_Research');
             $table->string('RP_Paper');
             $table->string('P_platinumID');
-            $table->foreign('P_platinumID')->references('P_platinumID')->on('p__platinums');
+            $table->foreign('P_platinumID')->references('P_platinumID')->on('platinums');
 
         });
     }

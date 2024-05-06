@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('publications', function (Blueprint $table) {
             $table->string('PB_ID')->primary();
             $table->string('ED_ID');
-            $table->foreign('ED_ID')->references('ED_ID')->on('e_d__expert_domains');
+            $table->foreign('ED_ID')->references('ED_ID')->on('expertDomains');
             $table->string('PB_Type');
             $table->string('PB_Title');
             $table->string('PB_Author');
@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('PB_Keyword');
             $table->date('PB_Date');
             $table->string('P_platinumID');
-            $table->foreign('P_platinumID')->references('P_platinumID')->on('p__platinums');
+            $table->foreign('P_platinumID')->references('P_platinumID')->on('platinums');
 
         });
     }

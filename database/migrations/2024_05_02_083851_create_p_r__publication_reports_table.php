@@ -16,9 +16,9 @@ return new class extends Migration
             $table->date('PR_Date');
             $table->string('PR_Description');
             $table->string('M_mentorID');
-            $table->foreign('M_mentorID')->references('M_mentorID')->on('m_mentors');
+            $table->foreign('M_mentorID')->references('M_mentorID')->on('mentors');
             $table->string('PB_ID');
-            $table->foreign('PB_ID')->references('PB_ID')->on('p_b__publications');
+            $table->foreign('PB_ID')->references('PB_ID')->on('publications');
 
         });
     }
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('p_r__publicationReports');
+        Schema::dropIfExists('publicationReports');
     }
 };

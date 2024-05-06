@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('platinums', function (Blueprint $table) {
             $table->string('P_platinumID')->primary();
             $table->string('S_staffID');
-            $table->foreign('S_staffID')->references('S_staffID')->on('s_staffs');
+            $table->foreign('S_staffID')->references('S_staffID')->on('staffs');
             $table->string('A_accountID');
-            $table->foreign('A_accountID')->references('A_accountID')->on('a_accounts');
+            $table->foreign('A_accountID')->references('A_accountID')->on('accounts');
             $table->string('P_title');
             $table->string('P_fullName');
             $table->string('P_icNum');
