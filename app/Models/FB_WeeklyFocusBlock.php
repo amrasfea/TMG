@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class FB_WeeklyFocusBlock extends Model
+class WeeklyFocusBlocks extends Model
 {
     use HasFactory;
 }
