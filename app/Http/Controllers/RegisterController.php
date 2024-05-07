@@ -6,5 +6,10 @@ use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
-    //
+    public function RegisterView() {
+        
+        return view('RegisterView.RegisterView');
+
+    }
+    
 }
