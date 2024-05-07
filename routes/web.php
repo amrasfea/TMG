@@ -1,7 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
+
 
 Route::get('/', function () {
-    return view('arip');
+    return view('welcome');
 });
+
+Route::get('/login',[LoginController::class, 'manageLoginview']);
+
+Route::get('/ForgotPassword',[LoginController::class, 'manageForgotPasswordView']);
+
+Route::get('/newRegister',[RegisterController::class, 'RegisterView']);
+
