@@ -13,7 +13,7 @@
     }
 
     .navbar {
-      background-color: #FFDB58;/* Change navbar background color */
+      background-color: #d8bfd8 !important; /* Change navbar background color */
       position: fixed; /* Fixed position */
       width: 100%; /* Full width */
       z-index: 1000; /* Ensure it's above other elements */
@@ -29,7 +29,7 @@
       margin: 0;
       padding: 0;
       width: 20%;
-      background-color: #FFDB58;
+      background-color: #d8bfd8;
       position: fixed;
       height: 100%;
       overflow: auto;
@@ -45,12 +45,12 @@
     }
 
     li a.active {
-      background-color: silver ;
+      background-color: lavender ;
       color: black;
     }
 
     li a:hover:not(.active) {
-      background-color: silver;
+      background-color: lavender;
       color: darkblue;
     }
 
@@ -89,9 +89,7 @@
   <!-- You can add content here which will be displayed in the main area -->
 </div>
 
-@yield('PlatinumBar')
+@yield('MentorBar')
 
 </body>
 </html>
-
-

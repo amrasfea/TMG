@@ -14,7 +14,15 @@ class LoginController extends Controller
         return view('LoginView.manageForgotPasswordView');
     }
 
-    public function ProfileView() {
-        return view('manageProfileView.ProfileView');
+    public function PlatinumHomePage() {
+        return view('LoginView.PlatinumHomePage');
+    }
+
+    public function MentorHomePage() {
+        return view('LoginView.MentorHomePage');
+    }
+
+    public function StaffHomePage() {
+        return view('LoginView.StaffHomePage');
     }
 }

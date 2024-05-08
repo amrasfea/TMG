@@ -15,5 +15,10 @@ Route::get('/ForgotPassword',[LoginController::class, 'manageForgotPasswordView'
 
 Route::get('/newRegister',[RegisterController::class, 'RegisterView']);
 
-Route::get('/PlatinumHome',[LoginController::class, 'ProfileView']);
+Route::get('/PlatinumHome',[LoginController::class, 'PlatinumHomePage']);
+
+Route::get('/MentorHome',[LoginController::class, 'MentorHomePage']);
+
+Route::get('/StaffHome',[LoginController::class, 'StaffHomePage']);
+
 

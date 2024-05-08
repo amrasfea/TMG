@@ -2,7 +2,7 @@
 
 @section('PlatinumBar')
     <!-- Your navigation content goes here -->
-    <div style="margin-left:20%;padding:1px 16px;height:1000px;">
+    <div style="margin-left:20%;padding:1px 20px;height:1000px; margin-top: 40px;">
   <h2>Fixed Full-height Side Nav</h2>
   <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
   <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
@@ -16,4 +16,3 @@
   <p>Some text..</p>
 </div>
 @endsection
-
