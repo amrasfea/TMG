@@ -13,4 +13,8 @@ class LoginController extends Controller
     public function manageForgotPasswordView() {
         return view('LoginView.manageForgotPasswordView');
     }
+
+    public function ProfileView() {
+        return view('manageProfileView.ProfileView');
+    }
 }

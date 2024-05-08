@@ -15,3 +15,5 @@ Route::get('/ForgotPassword',[LoginController::class, 'manageForgotPasswordView'
 
 Route::get('/newRegister',[RegisterController::class, 'RegisterView']);
 
+Route::get('/PlatinumHome',[LoginController::class, 'ProfileView']);
+
