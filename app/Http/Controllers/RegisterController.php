@@ -11,5 +11,11 @@ class RegisterController extends Controller
         return view('RegisterView.RegisterView');
 
     }
+
+    public function EditRegisterView() {
+        
+        return view('RegisterView.EditRegisterView');
+
+    }
     
 }

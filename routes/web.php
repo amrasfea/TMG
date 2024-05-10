@@ -21,4 +21,6 @@ Route::get('/MentorHome',[LoginController::class, 'MentorHomePage']);
 
 Route::get('/StaffHome',[LoginController::class, 'StaffHomePage']);
 
+Route::get('/EditRegistration',[RegisterController::class, 'EditRegisterView']);
+
 

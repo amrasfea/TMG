@@ -13,7 +13,7 @@
     }
 
     .navbar {
-      background-color: #d8bfd8 !important; /* Change navbar background color */
+      background-color: #d8bfd8; /* Change navbar background color */
       position: fixed; /* Fixed position */
       width: 100%; /* Full width */
       z-index: 1000; /* Ensure it's above other elements */
@@ -23,6 +23,10 @@
       text-align: center; 
       color: navy !important; /* Change navbar brand color */
     }
+
+    .form-section button:hover {
+            background-color: #0056b3; /* Darker shade of blue on hover */
+        }
 
     ul {
       list-style-type: none;
@@ -84,10 +88,7 @@
   <li><a href="#about">Publication</a></li>
 </ul>
 
-<div class="content">
-  <!-- Your content here -->
-  <!-- You can add content here which will be displayed in the main area -->
-</div>
+
 
 @yield('StaffBar')
 

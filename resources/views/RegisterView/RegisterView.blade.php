@@ -21,6 +21,13 @@
             font-size: 18px;
             margin-bottom: 10px;
         }
+
+        .form-section h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #007bff; /* Set the color of h2 elements */
+        }
+
         .form-section label {
             display: block;
             margin-bottom: 10px;
@@ -51,7 +58,6 @@
         <div class="form-container">
             <div class="form-section">
                 <h2>Platinum Information</h2>
-                <br>
                 <label for="registration-type">Type of registration:</label>
                 <select id="registration-type">
                     <option value="premier">Premier</option>
@@ -154,42 +160,42 @@
 </select>     
 
 
-<label for="referral">Referral</label>
-            <select id="referral" name="referral">
-            <option value="yes">Yes</option>
-           <option value="no">No</option>
-            </select>
+<label for="referral">Referral:</label>
+    <select id="referral" name="referral" onchange="toggleReferralFields()">
+        <option value="" selected>Please state whether there's someone who introduced you to the platinum program</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
 
-            <div id="referralFields" style="display: none;">
-    <label for="referral-name">Referral Name:</label>
-    <input type="text" id="referral-name" name="referral-name" placeholder="Enter referral name">
+    <div id="referralFields" style="display: none;">
+        <label for="referral-name">Referral Name:</label>
+        <input type="text" id="referral-name" name="referral-name" placeholder="Enter referral name">
 
-    <label for="referral-batch">Referral Batch:</label>
-    <input type="text" id="referral-batch" name="referral-batch" placeholder="Enter referral batch">
-</div>
+        <label for="referral-batch">Referral Batch:</label>
+        <input type="text" id="referral-batch" name="referral-batch" placeholder="Enter referral batch">
+    </div>
 
-<script>
-    function toggleReferralFields() {
-        var referralDropdown = document.getElementById("referral");
-        var referralFields = document.getElementById("referralFields");
+    <script>
+        function toggleReferralFields() {
+            var referralDropdown = document.getElementById("referral");
+            var referralFields = document.getElementById("referralFields");
 
-        if (referralDropdown.value === "yes") {
-            referralFields.style.display = "block";
-        } else {
-            referralFields.style.display = "none";
+            if (referralDropdown.value === "yes") {
+                referralFields.style.display = "block";
+            } else {
+                referralFields.style.display = "none";
+            }
         }
-    }
-</script>
+
+        // Call the function initially to set the initial state
+        toggleReferralFields();
+    </script>
+
+           <button>Submit</button> 
             </div>
 
-            
-
-
-
-            
+        
+           
         </div>
-        <button>Back</button>
-        <button>Next</button>
+        
     </body>
-@endsection
-
