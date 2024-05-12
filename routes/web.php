@@ -109,7 +109,7 @@ Route::get('/DeleteResearch',[ExpertDomainController::class, 'DeleteResearch&Pub
 
 Route::get('/DisplayExpertDetails',[ExpertDomainController::class, 'DisplayExpertDetails']);
 
-Route::get('/DisplayResearch',[ExpertDomainController::class, 'DeleteResearch&Publication']);
+Route::get('/DisplayResearch',[ExpertDomainController::class, 'DisplayResearch&Publication']);
 
 Route::get('/GenerateReport',[ExpertDomainController::class, 'GeneratePlatinumReport']);
 
