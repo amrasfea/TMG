@@ -89,6 +89,17 @@ Route::get('/PlatinumTotalPage',[ManageDraftThesisPerformanceController::class, 
 
 Route::get('/PlatinumThesisTitle',[ManageDraftThesisPerformanceController::class, 'PlatinumThesisTitleView']);
 
+Route::get('/AddExpert',[ExpertDomainController::class, 'AddExpertDomainInformation']);
+
+Route::get('/AddResearch',[ExpertDomainController::class, 'Research&Publication']);
+
+Route::get('/DeleteExpert',[ExpertDomainController::class, 'DeleteExpertDomainInformation']);
+
+Route::get('/DeleteResearch',[ExpertDomainController::class, 'DeleteResearch&Publication']);
+
+
+
+
 
 
 
