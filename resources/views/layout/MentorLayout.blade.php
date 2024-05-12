@@ -202,6 +202,9 @@
                         <li class="sidebar-item">
                             <a href="#" class="sidebar-link">Platinum Profile</a>
                         </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">CRMP Profile</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="sidebar-item">

@@ -111,11 +111,16 @@ Route::get('/GenerateReport',[ExpertDomainController::class, 'GeneratePlatinumRe
 
 Route::get('/SearchPlatinumExpDom',[ExpertDomainController::class, 'SearchPlatinumExpertDomain']);
 
-Route::get('/DSearchResearch',[ExpertDomainController::class, 'SearchResearch&Publication']);
+Route::get('/SearchResearch',[ExpertDomainController::class, 'SearchResearch&Publication']);
 
 Route::get('/UpdateExpert',[ExpertDomainController::class, 'UpdateExpertDomainView']);
 
 Route::get('/UpdateResearch',[ExpertDomainController::class, 'UpdateResearch&Publication']);
+
+Route::get('/MentorSearchPlatinumExpDom',[ExpertDomainController::class, 'MentorSearchPlatinumExpDom']);
+
+Route::get('/MentorView',[ExpertDomainController::class, 'MentorViewPlatinumExpDom']);
+
 
 
 
