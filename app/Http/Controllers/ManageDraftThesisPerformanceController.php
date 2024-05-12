@@ -45,7 +45,6 @@ class ManageDraftThesisPerformanceController extends Controller
     public function AllPlatinumThesisTitleView() {
         return view('ManageDraftThesisPerformanceView.Mentor.AllPlatinumThesisTitleView');
     }
-
     public function PlatinumDraftCompletionDateView() {
         return view('ManageDraftThesisPerformanceView.CRMP.PLatinumDraftCompletionDateView');
     }
