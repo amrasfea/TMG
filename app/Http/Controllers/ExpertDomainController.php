@@ -7,55 +7,55 @@ use Illuminate\Http\Request;
 class ExpertDomainController extends Controller
 {
     public function AddExpertDomainInformation() {
-        return view('AddExpertDomainInformation.AddExpertDomainInformation');
+        return view('ExpertDomainView.Platinum.AddExpertDomainInformation');
     }
 
     public function AddResearchPublicationView() {
-        return view('AResearch&Publication.AddResearch&PublicationView');
+        return view('ExpertDomainView.Platinum.AddResearchPublicationView');
     }
 
     public function DeleteExpertDomainView() {
-        return view('DeleteExpertDomainInformation.DeleteExpertDomainView');
+        return view('ExpertDomainView.Platinum.DeleteExpertDomainView');
     }
 
     public function DeleteResearchPublicationView() {
-        return view('DeleteResearch&Publication.DeleteResearchPublicationView');
+        return view('ExpertDomainView.Platinum.DeleteResearchPublicationView');
     }
 
     public function DisplayExpertDomainDetailsView() {
-        return view('DisplayExpertDetails.DisplayExpertDomainDetailsView');
+        return view('ExpertDomainView.Platinum.DisplayExpertDomainDetailsView');
     }
 
     public function DisplayResearchPublicationView() {
-        return view('DisplayResearch&Publication.DisplayResearchPublicationView');
+        return view('ExpertDomainView.Platinum.DisplayResearchPublicationView');
     }
 
     public function GenerateReport() {
-        return view('GeneratePlatinumReport.GenerateReport');
+        return view('ExpertDomainView.Platinum.GenerateReport');
     }
 
     public function SearchPlatinumExpertDomainView() {
-        return view('SearchPlatinumExpertDomain.SearchPlatinumExpertDomainView');
+        return view('ExpertDomainView.Platinum.SearchPlatinumExpertDomainView');
     }
 
     public function SearchResearchPublicationView() {
-        return view('SearchResearch&Publication.SearchResearchPublicationView');
+        return view('ExpertDomainView.Platinum.SearchResearchPublicationView');
     }
 
     public function UpdateExpertDomainView() {
-        return view('UpdateExpertDomainView.UpdateExpertDomainView');
+        return view('ExpertDomainView.Platinum.UpdateExpertDomainView');
     }
 
     public function UpdateResearchPublicationView() {
-        return view('UpdateResearch&Publication.UpdateResearchPublicationView');
+        return view('ExpertDomainView.Platinum.UpdateResearchPublicationView');
     }
 
     public function SearchPlatinumExpertDomainView() {
-        return view('MentorSearchPlatinumExpDom.SearchPlatinumExpertDomainView');
+        return view('ExpertDomainView.Mentor.SearchPlatinumExpertDomainView');
     }
 
     public function ViewPlatinumExpertDomain() {
-        return view('MentorViewPlatinumExpDom.ViewPlatinumExpertDomain');
+        return view('ExpertDomainView.Mentor.ViewPlatinumExpertDomain');
     }
 
 }

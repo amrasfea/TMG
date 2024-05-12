@@ -121,7 +121,7 @@ Route::get('/UpdateExpert',[ExpertDomainController::class, 'UpdateExpertDomainVi
 
 Route::get('/UpdateResearch',[ExpertDomainController::class, 'UpdateResearch&Publication']);
 
-Route::get('/MentorSearchPlatinumExpDom',[ExpertDomainController::class, 'MentorSearchPlatinumExpDom']);
+Route::get('/MentorSearch',[ExpertDomainController::class, 'MentorSearchPlatinumExpDom']);
 
 Route::get('/MentorView',[ExpertDomainController::class, 'MentorViewPlatinumExpDom']);
 
