@@ -26,6 +26,9 @@ Route::get('/EditRegistration',[RegisterController::class, 'EditRegisterView']);
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 
+Route::get('/forgot-password', [LoginController::class, 'manageForgotPasswordView'])->name('forgot.password');
+
+
 Route::get('/FocusBlock',[ManageWeeklyFocusController::class, 'FocusBlockView'] );
 
 Route::get('/AdminBlock',[ManageWeeklyFocusController::class, 'AdminBlockView']);

@@ -30,4 +30,9 @@ class LoginController extends Controller
     {
         return view('LoginView.manageLoginview'); // Assuming 'manageLoginview' is your login view file
     }
+
+    public function showForgotPasswordForm()
+    {
+        return view('LoginView.manageForgotPasswordView'); // Assuming 'manageLoginview' is your login view file
+    }
 }
