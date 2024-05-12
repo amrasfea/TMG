@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,6 +23,8 @@ Route::get('/MentorHome',[LoginController::class, 'MentorHomePage']);
 Route::get('/StaffHome',[LoginController::class, 'StaffHomePage']);
 
 Route::get('/EditRegistration',[RegisterController::class, 'EditRegisterView']);
+
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 
 Route::get('/FocusBlock',[ManageWeeklyFocusController::class, 'FocusBlockView'] );
 

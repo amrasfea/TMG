@@ -25,4 +25,9 @@ class LoginController extends Controller
     public function StaffHomePage() {
         return view('LoginView.StaffHomePage');
     }
+
+    public function showLoginForm()
+    {
+        return view('LoginView.manageLoginview'); // Assuming 'manageLoginview' is your login view file
+    }
 }
