@@ -50,12 +50,12 @@ class ExpertDomainController extends Controller
         return view('ExpertDomainView.Platinum.UpdateResearchPublicationView');
     }
 
-    public function SearchPlatinumExpertDomainView() {
-        return view('ExpertDomainView.Mentor.SearchPlatinumExpertDomainView');
-    }
-
     public function ViewPlatinumExpertDomain() {
         return view('ExpertDomainView.Mentor.ViewPlatinumExpertDomain');
+    }
+
+    public function SearchPlatinumExpertDomainView() {
+        return view('ExpertDomainView.Mentor.SearchPlatinumExpertDomainView');
     }
 
 }

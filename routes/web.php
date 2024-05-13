@@ -101,29 +101,29 @@ Route::get('/PlatinumThesisTitle',[ManageDraftThesisPerformanceController::class
 
 Route::get('/AddExpert',[ExpertDomainController::class, 'AddExpertDomainInformation']);
 
-Route::get('/AddResearch',[ExpertDomainController::class, 'Research&Publication']);
+Route::get('/AddResearch',[ExpertDomainController::class, 'AddResearchPublicationView']);
 
-Route::get('/DeleteExpert',[ExpertDomainController::class, 'DeleteExpertDomainInformation']);
+Route::get('/DeleteExpert',[ExpertDomainController::class, 'DeleteExpertDomainView']);
 
-Route::get('/DeleteResearch',[ExpertDomainController::class, 'DeleteResearch&Publication']);
+Route::get('/DeleteResearch',[ExpertDomainController::class, 'DeleteResearchPublicationView']);
 
-Route::get('/DisplayExpertDetails',[ExpertDomainController::class, 'DisplayExpertDetails']);
+Route::get('/DisplayExpertDetails',[ExpertDomainController::class, 'DisplayExpertDomainDetailsView']);
 
-Route::get('/DisplayResearch',[ExpertDomainController::class, 'DisplayResearch&Publication']);
+Route::get('/DisplayResearch',[ExpertDomainController::class, 'DisplayResearchPublicationView']);
 
-Route::get('/GenerateReport',[ExpertDomainController::class, 'GeneratePlatinumReport']);
+Route::get('/GenerateReport',[ExpertDomainController::class, 'GenerateReport']);
 
-Route::get('/SearchPlatinumExpDom',[ExpertDomainController::class, 'SearchPlatinumExpertDomain']);
+Route::get('/SearchPlatinumExpDom',[ExpertDomainController::class, 'SearchPlatinumExpertDomainView']);
 
-Route::get('/SearchResearch',[ExpertDomainController::class, 'SearchResearch&Publication']);
+Route::get('/SearchResearch',[ExpertDomainController::class, 'SearchResearchPublicationView']);
 
 Route::get('/UpdateExpert',[ExpertDomainController::class, 'UpdateExpertDomainView']);
 
-Route::get('/UpdateResearch',[ExpertDomainController::class, 'UpdateResearch&Publication']);
+Route::get('/UpdateResearch',[ExpertDomainController::class, 'UpdateResearchPublicationView']);
 
-Route::get('/MentorSearch',[ExpertDomainController::class, 'MentorSearchPlatinumExpDom']);
+Route::get('/MentorSearch',[ExpertDomainController::class, 'SearchPlatinumExpertDomainView']);
 
-Route::get('/MentorView',[ExpertDomainController::class, 'MentorViewPlatinumExpDom']);
+Route::get('/MentorView',[ExpertDomainController::class, 'ViewPlatinumExpertDomain']);
 
 
 
