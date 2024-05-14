@@ -163,6 +163,7 @@
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
     
     <div class="wrapper">
         <aside id="sidebar">
@@ -257,6 +258,26 @@
                 </a>
             </div>
         </aside>
+
+        <div class="main p-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light " style="background-color: #F9DD7A;">
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="/image/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                        </a>
+                    </div>
+                </nav>
+                <a class="navbar-brand" href="#">Welcome To Thesis Master Gate !</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        
+                    </ul>
+                </div>
+            </nav>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
