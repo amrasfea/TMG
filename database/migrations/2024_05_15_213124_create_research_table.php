@@ -12,8 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('research', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->string('S_staffID')->primary();
+            $table->string('P_platinumID');
+            $table->foreign('P_platinumID')->references('P_platinumID')->on('platinums');
+            $table->string('R_title');
         });
     }
 
