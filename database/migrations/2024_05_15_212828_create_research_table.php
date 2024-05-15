@@ -13,9 +13,8 @@ return new class extends Migration
     {
         Schema::create('research', function (Blueprint $table) {
             $table->string('S_staffID')->primary();
-            $table->foreign('P_platinumID')->references('P-platinumID')->on('platinums');
+            $table->foreign('P_platinumID')->references('P_platinumID')->on('platinums');
             $table->string('R_title');
-            
         });
     }
 
