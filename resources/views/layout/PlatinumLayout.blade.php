@@ -34,6 +34,9 @@
 
         body {
             font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+         
         }
 
         .wrapper {
@@ -47,6 +50,7 @@
             overflow: hidden;
             transition: all 0.35s ease-in-out;
             background-color: #fafbfe;
+            
         }
 
         #sidebar {
@@ -58,6 +62,9 @@
             background-color: #FFDB58;
             display: flex;
             flex-direction: column;
+            position: relative;
+            z-index: 1;
+
         }
 
         #sidebar.expand {
@@ -115,6 +122,7 @@
 
         .sidebar-link span {
     color:#0e2238; /* Black color */
+
 }
 
         a.sidebar-link:hover {
@@ -159,6 +167,17 @@
         #sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
             transform: rotate(45deg);
             transition: all .2s ease-out;
+        }
+
+        .navbar-brand {
+      color: #00008B;
+      font-weight: bold;
+    }
+
+    .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
     </style>
 </head>
@@ -260,18 +279,14 @@
         </aside>
 
         <div class="main p-3">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light " style="background-color: #F9DD7A;">
-                <nav class="navbar bg-body-tertiary">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                            <img src="/image/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
-                        </a>
-                    </div>
-                </nav>
-                <a class="navbar-brand" href="#">Welcome To Thesis Master Gate !</a>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #FAF9F5; margin-top:0%; ">
+
+                <a class="navbar-brand" href="#" style="word-spacing:2px"> Thesis Master Gate</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+               
+
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         
@@ -293,8 +308,9 @@
         
     </script>
         
-    @yield('PlatinumBar')
+
 </body>
 </html>
+@yield('PlatinumBar')
 
 

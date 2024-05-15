@@ -1,10 +1,5 @@
-@extends('layout.StaffLayout')
+@extends('main.staffmain')
 
-@section('StaffBar')
-
-    <!-- Your navigation content goes here -->
-   <!-- <div style="margin-left:20%;padding:1px 20px;height:1000px; margin-top: 40px;"> -->
-   
-   
-    
+@section('staff')
+lalalala
 @endsection

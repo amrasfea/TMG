@@ -1,7 +1,8 @@
-@extends('StaffLayout')
+@extends('main.staffmain')
 
-@section('StaffBar')
-    <style>
+@section('staff')
+
+<style>
         /* Common styles */
         body {
             font-family: Arial, sans-serif;
@@ -9,7 +10,9 @@
         .form-container {
             display: flex;
             justify-content: space-between;
-            margin-left: 20%;
+            
+            height: 80vh; /* Adjust as needed */
+            overflow: auto;
         }
         .form-section {
             width: 58%; /* Adjust as needed */
@@ -20,14 +23,8 @@
         .form-section h2 {
             font-size: 18px;
             margin-bottom: 10px;
-        }
-
-        .form-section h2 {
-            font-size: 18px;
-            margin-bottom: 20px;
             color: #007bff; /* Set the color of h2 elements */
         }
-
         .form-section label {
             display: block;
             margin-bottom: 10px;
@@ -35,15 +32,15 @@
         input[type="text"],
         input[type="tel"],
         input[type="email"],
-       select {
-    flex: 2;
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
+        select {
+            flex: 2;
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
         .form-section button {
             background-color: #007bff;
             color: #fff;
@@ -54,7 +51,7 @@
         }
     </style>
 
-    <body>
+   
         <div class="form-container">
             <div class="form-section">
                 <h2>Platinum Information</h2>
@@ -198,4 +195,5 @@
            
         </div>
         
-    </body>
+    
+@endsection

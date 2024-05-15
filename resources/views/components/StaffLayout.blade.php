@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -227,7 +226,7 @@
                             </a>
                             <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
                                 <li class="sidebar-item">
-                                    <a href="/" class="sidebar-link">New registeration</a>
+                                    <a href="/newRegister" class="sidebar-link">New registeration</a>
                                 </li>
                                 <li class="sidebar-item">
                                     <a href="#" class="sidebar-link"> View registeration</a>
