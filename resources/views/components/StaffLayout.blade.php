@@ -155,7 +155,6 @@
     </style>
 </head>
 <body>
-    
     <div class="wrapper">
         <aside id="sidebar">
             <div class="d-flex">

@@ -1,6 +1,6 @@
-@extends('layout.PlatinumLayout')
+@extends('main.platinumMain')
 
-@section('PlatinumBar')
+@section('Platinum')
     <!-- Your navigation content goes here -->
    <!-- <div style="margin-left:20%;padding:1px 20px;height:1000px; margin-top: 40px;"> -->
    

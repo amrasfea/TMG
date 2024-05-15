@@ -1,6 +1,6 @@
-@extends('PlatinumLayout')
+@extends('main.platinumMain')
 
-@section('PlatinumBar')
+@section('platinum')
     <!-- Your navigation content goes here -->
     <div style="margin-left:20%;padding:1px 16px;height:1000px;">
   <h2>Fixed Full-height Side Nav</h2>
