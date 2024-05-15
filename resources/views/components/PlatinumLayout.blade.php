@@ -33,6 +33,9 @@
 
         body {
             font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+         
         }
 
         .wrapper {
@@ -46,6 +49,7 @@
             overflow: hidden;
             transition: all 0.35s ease-in-out;
             background-color: #fafbfe;
+            
         }
 
         #sidebar {
@@ -54,9 +58,12 @@
             height: 100%;
             z-index: 1000;
             transition: all .25s ease-in-out;
-            background-color: #0e2238;
+            background-color: #FFDB58;
             display: flex;
             flex-direction: column;
+            position: relative;
+            z-index: 1;
+
         }
 
         #sidebar.expand {
@@ -73,15 +80,16 @@
 
         .toggle-btn i {
             font-size: 1.5rem;
-            color: #FFF;
+            color: #0e2238;
         }
 
         .sidebar-logo {
             margin: auto 0;
+            color: #0e2238;
         }
 
         .sidebar-logo a {
-            color: #FFF;
+            color:#0e2238;
             font-size: 1.15rem;
             font-weight: 600;
         }
@@ -98,7 +106,7 @@
 
         a.sidebar-link {
             padding: .625rem 1.625rem;
-            color: #FFF;
+            color: #0e2238;
             display: block;
             font-size: 0.9rem;
             white-space: nowrap;
@@ -108,7 +116,13 @@
         .sidebar-link i {
             font-size: 1.1rem;
             margin-right: .75rem;
+            color: #0e2238;
         }
+
+        .sidebar-link span {
+    color:#0e2238; /* Black color */
+
+}
 
         a.sidebar-link:hover {
             background-color: rgba(255, 255, 255, .075);
@@ -123,7 +137,7 @@
             position: absolute;
             top: 0;
             left: 70px;
-            background-color: #0e2238;
+            background-color: #FFDB58;
             padding: 0;
             min-width: 15rem;
             display: none;
@@ -153,9 +167,21 @@
             transform: rotate(45deg);
             transition: all .2s ease-out;
         }
+
+        .navbar-brand {
+      color: #00008B;
+      font-weight: bold;
+    }
+
+    .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
     
     <div class="wrapper">
         <aside id="sidebar">
@@ -227,7 +253,7 @@
                             </a>
                             <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
                                 <li class="sidebar-item">
-                                    <a href="/" class="sidebar-link">New registeration</a>
+                                    <a href="#" class="sidebar-link">New registeration</a>
                                 </li>
                                 <li class="sidebar-item">
                                     <a href="#" class="sidebar-link"> View registeration</a>
@@ -242,7 +268,6 @@
                         <span>Expert information</span>
                     </a>
                 </li>
-                
             </ul>
             <div class="sidebar-footer">
                 <a href="#" class="sidebar-link">
@@ -281,5 +306,6 @@
 
         
     </script>
+        
 
 

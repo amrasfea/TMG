@@ -167,6 +167,14 @@
                 </div>
             </div>
             <ul class="sidebar-nav">
+
+            <li class="sidebar-item">
+                    <a href="/StaffHome" class="sidebar-link">
+                        <i class="lni lni-agenda"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+
             <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                         data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
@@ -189,59 +197,68 @@
                             </ul>
                         </li>
                     </ul>
-
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Mentor profile</a>
+                            <a href="" class="sidebar-link">Personal</a>
                         </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Staff Profile</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Platinum Profile</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">CRMP Profile</a>
-                        </li>
+                       
                     </ul>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-agenda"></i>
-                        <span>Publication</span>
-                    </a>
-                </li>
-               
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
-                        <i class="lni lni-layout"></i>
-                        <span>Registeration</span>
-                    </a>
-                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
-                                data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
-                                registeration section
-                            </a>
-                            <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
-                                <li class="sidebar-item">
-                                    <a href="/newRegister" class="sidebar-link">New registeration</a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link"> View registeration</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-popup"></i>
-                        <span>Expert information</span>
-                    </a>
                 </li>
                 
+               
+                <li class="sidebar-item">
+    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+        data-bs-target="#registrationDropdown" aria-expanded="false" aria-controls="registrationDropdown">
+        <i class="lni lni-layout"></i>
+        <span>Registration</span>
+    </a>
+    <ul id="registrationDropdown" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+        <li class="sidebar-item">
+            <a href="/newRegister" class="sidebar-link">New Registration</a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">View Registration</a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Registration Report</a>
+        </li>
+    </ul>
+</li>
+
+<li class="sidebar-item">
+    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+        data-bs-target="#progressDropdown" aria-expanded="false" aria-controls="progressDropdown">
+        <i class="lni lni-popup"></i>
+        <span>Progress Monitoring</span>
+    </a>
+    <ul id="progressDropdown" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Draft Thesis Performance</a>
+        </li>
+       
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                data-bs-target="#weeklyFocusDropdown" aria-expanded="false" aria-controls="weeklyFocusDropdown">
+                Weekly Focus
+            </a>
+            <ul id="weeklyFocusDropdown" class="sidebar-dropdown list-unstyled collapse">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Focus Block </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Social Block</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Admin Block</a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Recovery Block</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</li>                
             </ul>
             <div class="sidebar-footer">
                 <a href="#" class="sidebar-link">
