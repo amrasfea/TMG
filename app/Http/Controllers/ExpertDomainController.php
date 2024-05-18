@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class ExpertDomainController extends Controller
 {
     public function AddExpertDomainInformation() {
-        return view('ExpertDomainView.Platinum.AddExpertDomainInformation');
+        return view('ExpertDomainView.Platinum.AddExpertDomainView');
     }
 
     public function AddResearchPublicationView() {
