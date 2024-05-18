@@ -216,7 +216,7 @@
             <a href="/newRegister" class="sidebar-link">New Registration</a>
         </li>
         <li class="sidebar-item">
-            <a href="#" class="sidebar-link">View Registration</a>
+            <a href="/ListRegistration" class="sidebar-link">View Registration</a>
         </li>
         <li class="sidebar-item">
             <a href="#" class="sidebar-link">Registration Report</a>

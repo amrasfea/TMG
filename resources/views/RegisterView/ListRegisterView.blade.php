@@ -1,6 +1,6 @@
-@extends('StaffLayout')
+@extends('main.staffmain')
 
-@section('StaffBar')
+@section('staff')
 
 <style>
 .form-container {
@@ -14,29 +14,28 @@
         }
     </style>
 
-<div class="form-container">
-<div class="my-3 p-3 bg-body rounded shadow-sm" style="width: 100%;">
-    <!-- FORM PENCARIAN -->
+
+    <!-- Search -->
     <div class="pb-3">
         <form class="d-flex" action="" method="get">
-            <input class="form-control me-1" type="search" name="katakunci" value="{{ Request::get('katakunci') }}" placeholder="Masukkan kata kunci" aria-label="Search">
-            <button class="btn btn-secondary" type="submit">Cari</button>
+            <input class="form-control me-1" type="search" name="katakunci" value="{{ Request::get('katakunci') }}" placeholder="Enter name to search" aria-label="Search">
+            <button class="btn btn-secondary" type="submit">Search</button>
         </form>
     </div>
 
-    <!-- TOMBOL TAMBAH DATA -->
+    <!-- Create data -->
     <div class="pb-3">
-        <a href='' class="btn btn-primary">+ Tambah Data</a>
+        <a href='/newRegister' class="btn btn-primary">+ New Registration</a>
     </div>
 
     <table class="table table-striped">
         <thead>
             <tr>
                 <th class="col-md-1">No</th>
-                <th class="col-md-3">NIM</th>
-                <th class="col-md-4">Nama</th>
-                <th class="col-md-2">Jurusan</th>
-                <th class="col-md-2">Aksi</th>
+                <th class="col-md-3">Batch</th>
+                <th class="col-md-4">Name</th>
+                <th class="col-md-2">Course</th>
+                <th class="col-md-2">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -47,7 +46,7 @@
                 <td>Ilmu Komputer</td>
                 <td>
                     <a href='' class="btn btn-warning btn-sm">Edit</a>
-                    <a href='' class="btn btn-danger btn-sm">Del</a>
+                    <a href='' class="btn btn-danger btn-sm">Delete</a>
                 </td>
             </tr>
         </tbody>

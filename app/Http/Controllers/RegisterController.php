@@ -12,9 +12,9 @@ class RegisterController extends Controller
 
     }
 
-    public function EditRegisterView() {
+    public function ListRegisterView() {
         
-        return view('RegisterView.EditRegisterView');
+        return view('RegisterView.ListRegisterView');
 
     }
     

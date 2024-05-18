@@ -26,7 +26,7 @@ Route::get('/MentorHome',[LoginController::class, 'MentorHomePage']);
 
 Route::get('/StaffHome',[LoginController::class, 'StaffHomePage']);
 
-Route::get('/EditRegistration',[RegisterController::class, 'EditRegisterView']);
+Route::get('/ListRegistration',[RegisterController::class, 'ListRegisterView']);
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 

@@ -12,11 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('accounts', function (Blueprint $table) {
-            $table->string('A_accountID')->primary();
+            $table->bigIncrements('A_accountID')->primary();
+            $table->string('A_email');
+            $table->timestamp('A_email_verified_at')->nullable();
             $table->string('A_password');
-            $table->string('A_username');
-            $table->string('A_accType');
-
+            $table->string('A_accType')->nullable();
+            $table->rememberToken();
+            $table->timestamps();
         });
     }
 
